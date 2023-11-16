@@ -22,5 +22,11 @@ public abstract class Animale {
 		System.out.println(getSpecie() + ", quando dorme fa: Zzzz");
 	}
 	
+	@Override
+	public String toString() {
+		
+		return getSpecie() + "\n";
+	}
+		
 	
 }
