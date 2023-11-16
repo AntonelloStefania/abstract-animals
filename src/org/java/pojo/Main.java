@@ -37,8 +37,7 @@ public class Main {
 		
 		for(int x=0; x<volatili.length; x++) {
 			IVolante v = volatili[x];
-			
-			v.faiVolare();
+			faiVolare(v);
 		}
 		
 		
@@ -50,14 +49,16 @@ public class Main {
 		
 		for(int x=0; x<natanti.length; x++) {
 			INuotante n= natanti[x];
-			
-			n.faiNuotare();
+			faiNuotare(n);
 		}
 		
-		
-		
-		
-		
+
+	}
+	public static void faiVolare(IVolante v) {
+		v.vola();
 	}
 	
+	public static void faiNuotare(INuotante n) {
+		n.nuota();
+	}
 }

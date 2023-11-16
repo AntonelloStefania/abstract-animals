@@ -11,10 +11,6 @@ public class Aquila extends Animale implements IVolante {
 		
 	}
 
-	public  void vola() {
-		System.out.println(getSpecie() + " dice: sto volando!");
-	}
-	
 	@Override
 	public void setSpecie(String specie) {
 		
@@ -34,8 +30,8 @@ public class Aquila extends Animale implements IVolante {
 	}
 
 	@Override
-	public void faiVolare() {
-		 vola();
+	public void vola() {
+		System.out.println(getSpecie() + " dice: sto volando");
 		
 	}
 

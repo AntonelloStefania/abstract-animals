@@ -11,9 +11,6 @@ public class Delfino extends Animale implements INuotante{
 		
 	}
 	
-	public void nuota() {
-		System.out.println(getSpecie() + " dice: sto nuotando!");
-	}
 	
 	@Override
 	public  void  setSpecie(String specie) {
@@ -34,8 +31,8 @@ public class Delfino extends Animale implements INuotante{
 	}
 
 	@Override
-	public void faiNuotare() {
-		nuota();
+	public void nuota() {
+		System.out.println(getSpecie() + " dice: sto nuotando!");
 		
 	}
 

@@ -11,9 +11,7 @@ public class Cane extends Animale implements INuotante{
 		super(specie);
 		
 	}
-	public void nuota() {
-		System.out.println(getSpecie() + " dice: sto nuotando!");
-	}
+	
 	
 	@Override
 		public void setSpecie(String specie) {
@@ -32,9 +30,9 @@ public class Cane extends Animale implements INuotante{
 		
 	}
 	@Override
-	public void faiNuotare() {
-		nuota();
+	public void nuota() {
 		
+		System.out.println(getSpecie() + " dice: sto nuotando!");
 	}
 
 }
